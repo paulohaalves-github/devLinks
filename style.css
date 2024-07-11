@@ -28,6 +28,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 body * {
@@ -79,7 +80,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
@@ -157,4 +158,16 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+
+@media (min-width) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+
+    .light {
+      --bg-url: url(./assets/bg-destop-light.jpg);
+    }
+  }
 }
